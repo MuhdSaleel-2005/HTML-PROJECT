@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url( image22.jpeg);
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent overlay */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ffcc00;
+      }
+
+      .form-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1em;
+      }
+
+      .form-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background: #555;
+        color: #fff;
+        font-size: 1em;
+      }
+
+      .form-container button {
+        width: 100%;
+        padding: 10px;
+        background: #ffcc00;
+        border: none;
+        border-radius: 5px;
+        color: #111;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .form-container button:hover {
+        background: #ff9900;
+      }
+
+      .form-container a {
+        color: #ffcc00;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Register</h2>
+      <form action="/register" method="POST">
+        <label for="username">Shope Name</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email"> Shop Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="file">Shop license</label>
+        <input type="file" required />
+
+        <label for="address">Address</label>
+        <input type="address">
+
+        <label for="postion"><br>Registeration fee</label>
+            <select name="postion" id="">
+                <option value="postion">Select payment method</option>
+                <option value="postion">google pay</option>
+                <option value="postion">phone pay</option>
+                <option value="postion">other method</option>
+            </select>
+
+        <button type="submit">Upload</button>
+      </form>
+      <a href="login.html">Already have an account? Login</a>
+    </div>
+  </body>
+</html>
